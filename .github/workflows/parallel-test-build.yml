@@ -12,6 +12,13 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:runCheckout
+
+      - name: Cypress report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome-reports-1
+          path: cypress/reports/html
+
   Login-run:
     runs-on: ubuntu-24.04
     steps:
@@ -23,4 +30,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:runLoginCheck
-          
+
+      - name: Cypress report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome-reports-2
+          path: cypress/reports/html
