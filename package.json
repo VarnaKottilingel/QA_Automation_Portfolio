@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test:runCheckout": "npx cypress run --spec cypress/e2e/saucedemo.cy.js",
+    "test:runLoginCheck": "npx cypress run --spec cypress/e2e/tc2.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
