@@ -1,0 +1,7 @@
+//added this file to remove writing /// <reference types="cypress" /> in every test file
+{ 
+    "include":[
+        "./node_modules/cypress",
+        "cypress/**/*.js"
+    ]
+}
