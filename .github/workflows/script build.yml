@@ -1,4 +1,4 @@
-name: End-to-end tests
+name: Selective build
 on: push
 jobs:
   cypress-run:
@@ -11,4 +11,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-        command: npm run test:run checkout
+          command: npm run test:run checkout
