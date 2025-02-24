@@ -10,7 +10,7 @@ class CartPage {
     }
 
     continueCheckout() {
-        cy.get('#continue').click();
+        cy.get('#continueeee').click();
     }
 
     finishOrder() {
